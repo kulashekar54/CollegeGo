@@ -3,6 +3,8 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CollegeGo"
+    xmlns:model="clr-namespace:CollegeGo.Model"
+    xmlns:helper="clr-namespace:CollegeGo.Helper"
     xmlns:viewmodel="clr-namespace:CollegeGo.ViewModel"
     x:DataType="viewmodel:MessageViewModel"
     x:Class="CollegeGo.MainPage">
@@ -58,7 +60,7 @@
             </CollectionView.ItemsLayout>
 
             <CollectionView.ItemTemplate>
-                <DataTemplate x:DataType="local:MessageItem">
+                <DataTemplate x:DataType="model:MessageItem">
 
                 <Grid Padding="12" ColumnDefinitions="Auto,*,Auto">
 
@@ -72,7 +74,7 @@
                         VerticalOptions="Center">
 
                         <Label 
-                            Text="{Binding Name[0]}"
+                            Text="{Binding Name}"
                             HorizontalOptions="Center"
                             VerticalOptions="Center"
                             TextColor="White"

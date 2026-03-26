@@ -41,11 +41,11 @@ namespace CollegeGo.ViewModel
         {
             IsLoading = true;
 
-            await Task.Delay(1000); // simulate API delay
+            await Task.Delay(1000);
 
             await LoadMoreData();
 
-            await Task.Delay(200); // smooth UI switch
+            await Task.Delay(200);
 
             IsLoading = false;
         }
@@ -57,7 +57,7 @@ namespace CollegeGo.ViewModel
 
             _isBusy = true;
 
-            await Task.Delay(500); // simulate API
+            await Task.Delay(500); 
 
             var newItems = new List<MessageItem>();
 
