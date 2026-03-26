@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign 2D5B2130DD673F40E2D55E8F3A44FA1EE99499A5 --entitlements /Users/kulashekarsengan/MobileApps/SelfDevelopment/MAUI/CollegeApp/CollegeGo/obj/Debug/net9.0-ios/ios-arm64/Entitlements.xcent /Users/kulashekarsengan/MobileApps/SelfDevelopment/MAUI/CollegeApp/CollegeGo/bin/Debug/net9.0-ios/ios-arm64/CollegeGo.app
