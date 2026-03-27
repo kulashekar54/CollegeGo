@@ -16,6 +16,18 @@ namespace CollegeGo.ViewModel
         private int _currentIndex = 0;
 
         private bool _isBusy;
+        public bool IsBusy
+        {
+            get => _isBusy;
+            set
+            {
+                if (_isBusy != value)
+                {
+                    _isBusy = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
 
         private bool _isLoading;
         public bool IsLoading
